@@ -1,8 +1,8 @@
 /* ===== VARIABLES ===== */
 :root {
     --bg-color: #181818;
-    --panel-dark: #1f1f1f;
-    --panel-light: #242424;
+    --panel-dark: #1c1c1c;
+    --panel-light: #232323;
     --text-color: #eaeaea;
     --subtext-color: #b5b5b5;
     --primary-color: #2c67f2;
@@ -19,101 +19,52 @@ body {
     padding: 40px;
 }
 
-/* Main container */
+/* FORCE DARK BACKGROUNDS */
+* {
+    background-color: transparent !important;
+    color: var(--text-color);
+}
+
 .resume-container {
     width: 100%;
     max-width: 1050px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background: var(--panel-dark);
-    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    background: var(--panel-dark) !important; /* FORCE IT */
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
 }
 
-/* ===== SECTIONS ===== */
+.resume-left {
+    background: var(--panel-light) !important;
+    padding: 35px;
+}
+
+.resume-right {
+    background: var(--panel-dark) !important;
+    padding: 40px;
+}
+
+.section-title {
+    color: var(--primary-color) !important;
+}
+
+/* Other styling */
 .section {
     margin-bottom: 30px;
 }
 
-.section-title {
-    font-size: var(--section-title-size);
-    margin-bottom: 12px;
-    font-weight: bold;
-    color: var(--primary-color);
-    text-transform: uppercase;
-}
-
-/* Lists */
-.list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 .list li {
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
+    color: var(--text-color) !important;
 }
 
-/* Inline lists */
-.inline-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+.profession, .item-date {
+    color: var(--subtext-color) !important;
 }
 
-/* ===== LEFT SIDE ===== */
-.resume-left {
-    background: var(--panel-light);
-    padding: 35px;
-}
-
-.profile-img {
-    width: 140px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    border: 3px solid #333;
-}
-
-.name {
-    margin: 10px 0 0 0;
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.profession {
-    color: var(--subtext-color);
-    margin-top: 5px;
-}
-
-.home-info {
-    margin-top: 20px;
-}
-
-/* ===== RIGHT SIDE ===== */
-.resume-right {
-    padding: 40px;
-    background: var(--panel-dark);
-}
-
-.item {
-    margin-bottom: 20px;
-}
-
-.item-title {
-    font-weight: bold;
-}
-
-.item-date {
-    font-size: 0.9rem;
-    color: var(--subtext-color);
-}
-
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 @media(max-width: 900px) {
     .resume-container {
         grid-template-columns: 1fr;
