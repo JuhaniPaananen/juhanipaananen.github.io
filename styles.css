@@ -21,7 +21,7 @@ body {
 
 /* FORCE DARK BACKGROUNDS */
 * {
-    background-color: transparent !important;
+    background-color: transparent;
     color: var(--text-color);
 }
 
