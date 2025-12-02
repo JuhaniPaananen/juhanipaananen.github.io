@@ -12,7 +12,8 @@
 
 /* ===== GLOBAL ===== */
 body {
-    background: url("assets/BG.png") no-repeat center center fixed;
+    background: red;  /* test if red background shows */
+    /*background: url("assets/BG.png") no-repeat center center fixed;*/
     background-size: cover;
     font-family: var(--font-family);
     color: var(--text-color);
