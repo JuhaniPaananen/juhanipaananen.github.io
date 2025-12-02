@@ -12,7 +12,7 @@
 
 /* ===== GLOBAL ===== */
 body {
-    background: var(--bg-color);
+    background: url("assets/BG.jpg") no-repeat center center fixed;
     font-family: var(--font-family);
     color: var(--text-color);
     margin: 0;
