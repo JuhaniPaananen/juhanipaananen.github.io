@@ -1,3 +1,3 @@
 # juhani_paananen.github.io
 
-[https://juhanipaananen.github.io/juhani_paananen.github.io/](https://juhanipaananen.github.io/juhani_paananen.github.io/)
+[LINK](https://juhanipaananen.github.io/)
