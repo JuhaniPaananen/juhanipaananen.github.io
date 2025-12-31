@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<script>
+var name = prompt("NIMI");
+var street = prompt("KATU");
+var city = prompt("CITY");
+document.getElementById("address").textContent =
+street + ", " + city;
+</script>
+</script>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,8 +28,8 @@
                 <p>Juhani Paananen</p>
                 <p>Pengerkatu 2 B 46, Kokkola</p>
                 <p>April 13 2023</p>
-                <p>Elisa</p>
-                <p>Kansakoulukatu 24, Kokkola</p>
+                <p>Nimi</p>
+                <p id="address"></p>
             </section>
         </div>
         <div class="resume-right">
