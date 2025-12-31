@@ -48,7 +48,13 @@ body {
     padding: 40px;
 }
 
+.resume-top{
+    justify-items: center; /* horizontal */
+    align-items: start;    /* vertical */
+}
+
 .sidebar-header {
+    
     padding: 35px;
     position: sticky;
     top: 0;
