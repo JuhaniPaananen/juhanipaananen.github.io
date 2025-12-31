@@ -18,8 +18,8 @@
             <section class="home">
                 <p>Juhani Paananen</p>
                 <p>Sivutie 43, Jyväskylä</p>
-                <p>April 13 2023</p>
-                <p>Nimi</p>
+                <p id="currentDate"></p>
+                <p id="onlyname"></p>
                 <p id="address"></p>
             </section>
         </div>
@@ -33,7 +33,7 @@
 
                 <p>I am applying for this job, because that job is interesting to me and want to have chance to acquire work experience from this kind of job. I am most focused to my coding skills since that is what I am most capable of and want to do in the future.</p>
 
-                <p>Me as a person I am very open minded, but not very talkative, because I choose my conversations only that are beneficial and meaningful in general terms. I view everyone as equal and neutral until proven otherwise by done actions. My hobbies are gaming, coding specifically game coding and other, listening music and maintaining my physical appearance also additionally gaining more muscle power.</p>
+                <p>Me as a person I am very open minded, but not very talkative, because I choose my conversations only that are beneficial and meaningful in general terms. I view everyone as equal and neutral until proven otherwise by done actions. My hobbies are gaming, coding specifically game coding, listening music and maintaining my physical appearance also additionally gaining more muscle power.</p>
 
                 <p>I am native finnish speaker and I am very good english speaker. Always eager to learn new things and self-starter at things that I able to do and find most useful or interesting to me. I am commiting to set my values to wanted level.</p>
 
@@ -51,6 +51,12 @@
         var city = prompt("CITY");
         document.getElementById("address").textContent = street + ", " + city;
         document.getElementById("dearname").textContent = " Dear " + name + ",";
+        document.getElementById("onlyname").textContent = name;
+
+        const today = new Date();
+
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById("currentDate").textContent = today.toLocaleDateString('fi-FI', options);
     </script>
 
 </body>
