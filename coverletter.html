@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script>
-        var name = prompt("NIMI");
-        var street = prompt("KATU");
-        var city = prompt("CITY");
-        document.getElementById("address").textContent = street + ", " + city;
-        document.getElementById("dearname").textContent = " Dear " + name + ",";
-    </script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +12,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <script>
+        var name = prompt("NIMI");
+        var street = prompt("KATU");
+        var city = prompt("CITY");
+        document.getElementById("address").textContent = street + ", " + city;
+        document.getElementById("dearname").textContent = " Dear " + name + ",";
+    </script>
     <main class="resume-container">
         <div class="resume-left">
             <h1 class="section-title main-title">Cover letter</h1>
