@@ -51,6 +51,15 @@ body {
 .resume-top{
     justify-items: center; /* horizontal */
     align-items: start;    /* vertical */
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: var(--panel-dark) !important; /* FORCE IT */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
 }
 
 .sidebar-header {
